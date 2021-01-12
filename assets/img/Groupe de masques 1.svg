@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1878.753" height="1454.178" viewBox="0 0 1878.753 1454.178">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: #707070;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        fill: url(#pattern);
+      }
+    </style>
+    <clipPath id="clip-path">
+      <path id="Tracé_1051" data-name="Tracé 1051" class="cls-1" d="M136.77,30.976,1533.7-7.967c66.725-1.86,119.308,54.874,117.448,126.719l-16.72,645.789c-1.86,71.845-57.46,131.595-124.184,133.455L113.314,936.94C46.589,938.8-5.994,882.066-4.134,810.22l16.72-645.789C14.446,92.586,70.045,32.836,136.77,30.976Z" transform="translate(-406.031 155.938) rotate(-18)"/>
+    </clipPath>
+    <pattern id="pattern" width="1" height="1" viewBox="-1297.635 139.928 3539.9 2359.754">
+      <image preserveAspectRatio="xMidYMid slice" width="3450.395" height="2319.432" xlink:href="Groupe%20de%20masques%201-image.jpg"/>
+    </pattern>
+  </defs>
+  <g id="Groupe_de_masques_1" data-name="Groupe de masques 1" class="cls-2" transform="matrix(-0.999, 0.035, -0.035, -0.999, 1471.742, 1051.921)">
+    <rect id="science-in-hd-4F_EBY__6II-unsplash" class="cls-3" width="3450.395" height="2300.089" transform="translate(2940.096 1486.242) rotate(-178)"/>
+  </g>
+</svg>

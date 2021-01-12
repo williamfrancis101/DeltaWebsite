@@ -1,0 +1,1405 @@
+/*
+Theme Name : Delta
+Author: IKIDIV
+Author URI: http://ikidiv.com/
+*/
+
+/*=========================================
+======= Font ==============================
+===========================================*/
+
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+@font-face {
+  font-family: "Century Gothic";
+  src: url("../fonts/CenturyGothic-Bold.woff2") format("woff2"),
+    url("../fonts/CenturyGothic-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Century Gothic";
+  src: url("../fonts/CenturyGothic.woff2") format("woff2"),
+    url("../fonts/CenturyGothic.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: "BebasNeue";
+  src: url("../fonts/BebasNeue-Regular.woff2") format("woff2"),
+    url("../fonts/BebasNeue-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/*
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=
+*/
+
+* {
+  -webkit-transition: all 350ms;
+  -o-transition: all 350ms;
+  -moz-transition: all 350ms;
+  transition: all 350ms;
+}
+
+body {
+  font-family: "Bebas Neue", cursive !important;
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.btn.focus,
+.btn:focus {
+  border-color: transparent !important;
+  box-shadow: none !important;
+  outline: 0 none !important;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.main-color {
+  color: #9aca3c !important;
+}
+.s-color {
+  color: #31a9e0 !important;
+}
+.black-color {
+  color: #000000 !important;
+}
+.white-color {
+  color: #000000 !important;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+/*//////////////////////////////////
+            Componants
+//////////////////////////////////*/
+
+/*--= Button =--*/
+.main-btn {
+  background-color: #000000;
+  font-size: 33px;
+  color: #ffffff;
+  padding: 10px 15px;
+  border-radius: 0;
+}
+
+/*=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+               Header
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+*/
+header {
+  position: absolute;
+  z-index: 9999;
+  width: 100%;
+  margin-top: 20px;
+  overflow: hidden;
+}
+header .man-logo {
+  max-width: 200px;
+  height: 54px;
+}
+header .man-logo img {
+}
+header .nav-btn {
+  background-color: black;
+  color: #9aca3c;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+}
+header .menu-content {
+  background-color: #000000;
+  clip-path: polygon(0% 0%, 100% 0, 100% 100%, 2% 100%);
+  right: -16px;
+  position: relative;
+}
+header .main-menu {
+  margin-right: 35px;
+}
+header .main-menu li {
+  margin: 0 7px;
+}
+header .main-menu li a {
+  font-size: 16px;
+  color: #ffffff;
+  font-family: "Century Gothic" !important;
+}
+header .main-menu li.active a,
+header .main-menu li a:hover {
+  color: #9aca3c;
+}
+header .search-form {
+  margin-right: 15px;
+}
+header .search-form input {
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 25px;
+  min-width: 200px;
+  height: 30px;
+
+}
+header .search-form button {
+  color: #ffffff;
+  border: none;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+/*=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+               Footer
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+*/
+footer {
+  background-color: #000000;
+  padding: 20px;
+}
+footer .footer-logo {
+  margin-right: 5%;
+}
+footer .footer-logo img {
+}
+footer .footer-menu {
+  margin-left: 15px;
+}
+footer .footer-menu li {
+  margin: 0 5px;
+}
+footer .footer-menu li a {
+  color: #fff;
+  font-size: 16px;
+  font-family: "Century Gothic" !important;
+}
+footer .footer-menu li.active a,
+footer .footer-menu li a:hover {
+  color: #9aca3c;
+}
+footer .footer-blk {
+  position: relative;
+  margin: 0 35px;
+}
+footer .footer-blk svg {
+  color: #fff;
+  font-size: 24px;
+  margin-right: 10px;
+}
+footer .footer-blk span {
+  color: #fff;
+  font-size: 18px;
+  text-transform: lowercase;
+  font-family: "Century Gothic" !important;
+}
+
+/*=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+            HOME
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+*/
+
+/*====== +++ Intro +++ =====*/
+.intro {
+  position: relative;
+  height: 750px;
+  top: -15px;
+}
+.intro .intro-slider {
+  position: absolute;
+  /*max-height: 750px;*/
+  z-index: 99;
+  width: 100%;
+  left: -15px;
+  /*clip-path: polygon(45% 1.33975%, 46.5798% 0.60307%, 48.26352% 0.15192%, 50% 0%, 51.73648% 0.15192%, 53.4202% 0.60307%, 55% 1.33975%, 89.64102% 21.33975%, 91.06889% 22.33956%, 92.30146% 23.57212%, 93.30127% 25%, 94.03794% 26.5798%, 94.48909% 28.26352%, 94.64102% 30%, 94.64102% 70%, 94.48909% 71.73648%, 94.03794% 73.4202%, 93.30127% 75%, 92.30146% 76.42788%, 91.06889% 77.66044%, 89.64102% 78.66025%, 55% 98.66025%, 53.4202% 99.39693%, 51.73648% 99.84808%, 50% 100%, 48.26352% 99.84808%, 46.5798% 99.39693%, 45% 98.66025%, 10.35898% 78.66025%, 8.93111% 77.66044%, 7.69854% 76.42788%, 6.69873% 75%, 5.96206% 73.4202%, 5.51091% 71.73648%, 5.35898% 70%, 5.35898% 30%, 5.51091% 28.26352%, 5.96206% 26.5798%, 6.69873% 25%, 7.69854% 23.57212%, 8.93111% 22.33956%, 10.35898% 21.33975%);*/
+}
+
+.intro .intro-slider .item {
+    padding-right: 75px;
+}
+.intro .intro-slider .item svg {
+  fill: transparent !important;
+}
+.intro .intro-slider .item .slider-overlay {
+  position: absolute;
+  top: 30%;
+  right: 0%;
+  left: auto;
+
+}
+.intro .intro-slider .item .slider-overlay h1 {
+  font-size: 4.5em;
+  color: #000000;
+  font-family: "Century Gothic" !important;
+}
+.intro .intro-slider .item .slider-overlay h1 span {
+  font-size: 88px;
+  color: #000000;
+  font-family: "Century Gothic" !important;
+}
+.intro .intro-slider .item .slider-overlay p {
+  font-size: 24px;
+  color: #000000;
+  font-family: "Century Gothic" !important;
+}
+.intro .intro-slider .item .slider-overlay a {
+  font-size: 22px;
+  float: right;
+}
+.intro .intro-bgs {
+}
+.intro .intro-bgs .head-img-1 {
+  position: relative;
+  top: 20px;
+  transform: rotate(3deg);
+  left: -30%;
+}
+.intro .intro-bgs .head-img-2 {
+  position: absolute;
+  top: 105%;
+  z-index: 99;
+  width: 25%;
+  left: 10%;
+}
+.intro .intro-bgs .head-img-3 {
+  position: absolute;
+  top: 102%;
+  z-index: 99;
+  width: 4%;
+  left: 37%;
+  /*bottom: 27%;*/
+}
+.intro .intro-bgs .head-img-4 {
+  z-index: 9;
+  position: absolute;
+  left: -5%;
+  top: 65%;
+}
+
+/*====== +++ About +++ =====*/
+.about {
+  position: relative;
+  height: 600px;
+  overflow: hidden;
+  z-index: 99;
+
+}
+.about .about-text {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  width: 400px;
+  z-index: 9;
+}
+.about .about-text h2 {
+  font-size: 100px;
+  color: #000000;
+  font-weight: 400;
+}
+.about .about-text h2 a{
+  color: #000000;
+}
+
+.about .about-text p {
+  font-size: 16px;
+  color: #000000;
+  font-family: "Century Gothic" !important;
+}
+.about .about-bgs {
+}
+.about .about-bgs .about-img-1 {
+  position: absolute;
+  right: -5%;
+  top: 0;
+}
+.about .about-bgs .about-img-2 {
+  position: absolute;
+  right: -40%;
+  top: -30%;
+}
+
+/*====== +++ Consolting +++ =====*/
+.consulting {
+  position: relative;
+  height: 550px;
+  top: -475px;
+  z-index: 999;
+}
+.consulting .con-text {
+    top: -70px;
+}
+.consulting .con-text h2 a{
+  color: #000000;
+}
+.consulting .con-text h2 {
+  font-size: 80px;
+  color: #000000;
+  transform: rotate(-28deg);
+  top: -79px;
+  position: relative;
+  z-index: 9;
+  left: 18%;
+  margin-top: 210px;
+}
+.consulting .con-text .tlt-line::after {
+  content: "";
+  width: 0px;
+  height: 1px;
+  background-color: black;
+  position: absolute;
+  top: 45px;
+  left: 120%;
+  transition: all 1000ms;
+}
+.consulting .con-text .tlt-line.anime::after {
+  width: 200px;
+}
+.consulting .con-text .con-anime {
+  position: absolute;
+  top: 80%;
+  width: 75%;
+  height: 500px;
+  z-index: 999;
+}
+.consulting .con-text .con-anime.opacity a {
+  opacity: 0.4;
+}
+.consulting .con-text .con-anime.opacity a:hover {
+  opacity: 1;
+  position: absolute;
+}
+.consulting .con-bg {
+  position: absolute;
+  top: 90%;
+  left: -20%;
+}
+.consulting .con-text .con-anime a {
+  position: absolute;
+  font-family: "Century Gothic" !important;
+}
+.consulting .con-text .con-anime a:hover {
+  transform: scale(1.5);
+  opacity: 1 !important;
+}
+
+.consulting .con-text .con-anime .con-txt-1 {
+  font-size: 80px;
+  line-height: 1;
+  transform: rotate(90deg);
+  top: 15%;
+  left: 52%;
+}
+.consulting .con-text .con-anime .con-txt-2 {
+  font-size: 35px;
+  line-height: 1;
+  transform: rotate(90deg);
+  top: 33%;
+  left: 45%;
+}
+.consulting .con-text .con-anime .con-txt-3 {
+  font-size: 45px;
+  line-height: 1;
+  transform: rotate(90deg);
+  top: 92%;
+  left: 36%;
+}
+.consulting .con-text .con-anime .con-txt-4 {
+  font-size: 30px;
+  line-height: 1;
+  top: 74%;
+  left: 22%;
+}
+.consulting .con-text .con-anime .con-txt-5 {
+  font-size: 50px;
+  line-height: 1;
+  top: 82%;
+  left: 17%;
+}
+.consulting .con-text .con-anime .con-txt-6 {
+  font-size: 45px;
+  line-height: 1;
+  top: 73%;
+  left: 60%;
+}
+.consulting .con-text .con-anime .con-txt-7 {
+  font-size: 28px;
+  line-height: 1;
+  top: 102%;
+  left: 60%;
+}
+.consulting .con-text .con-anime .con-txt-8 {
+  font-size: 45px;
+  line-height: 1;
+  top: 118%;
+  left: 32%;
+  transform: rotate(90deg);
+}
+
+.consulting .news-bgs .news-img-4 {
+  position: absolute;
+  right: -5%;
+  top: 150%;
+  z-index: 1;
+}
+
+/*====== +++ News +++ =====*/
+.news {
+  position: relative;
+  height: 850px;
+  overflow: hidden;
+}
+.news h2 {
+  font-size: 120px;
+  color: #ffffff;
+  position: absolute;
+  right: 10%;
+  top: 10%;
+  z-index: 9999;
+}
+.news .news-slider {
+  position: absolute;
+  max-height: 750px;
+  z-index: 99;
+  width: 100%;
+  right: -10%;
+  bottom: 0;
+}
+.news .news-slider:before {
+  content: "";
+  width: 50px;
+  height: 2px;
+  background-color: black;
+  position: absolute;
+  top: 60%;
+  left: 12%;
+  transform: rotate(-33deg);
+}
+.news .news-slider:after {
+  content: "";
+  width: 300px;
+  height: 2px;
+  background-color: black;
+  position: absolute;
+  top: 43%;
+  left: 15%;
+  transform: rotate(-33deg);
+}
+.news .news-slider .owl-nav{
+    position: absolute;
+    top: 65%;
+    width: 50%;
+    right: 18%;
+}
+.news .news-slider .owl-nav button:focus{
+  border: none !important;
+}
+.news .news-slider .owl-nav button img{
+	height: 35px;
+}
+.news .news-slider .owl-nav button.owl-prev{
+  left: -50px;
+  position: absolute;
+  width: 30px;
+}
+.news .news-slider .owl-nav button.owl-next{
+  right: -50px;
+  position: absolute;
+  width: 30px;
+}
+.news .news-slider .owl-dots {
+  display: none;
+}
+.news .news-slider .item {
+}
+.news .news-slider .item img {
+}
+.news .news-slider .item .slider-overlay {
+  bottom: 0;
+  width: 99%;
+  padding-left: 150px;
+  right: 0;
+  left: auto;
+  height: 75px;
+  top: auto;
+  /*background-image: linear-gradient(to top, #000, transparent);*/
+}
+.news .news-slider .item .slider-overlay::before {
+  display: none;
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: -56px;
+  width: 65px;
+  height: 145px;
+  background-color: #fff;
+  transform: rotate(57deg);
+}
+.news .news-slider .item .slider-overlay p {
+  color: #fff;
+  font-size: 16px;
+  font-family: "Century Gothic" !important;
+  font-weight: 400;
+}
+.news .news-slider .item .slider-overlay a {
+  height: 40px;
+  line-height: 26px;
+  font-size: 18px;
+  margin-left: 25px;
+  letter-spacing: 1px;
+  min-width: 125px;
+}
+.news .news-bgs {
+}
+.news .news-bgs .news-img-3 {
+  right: -16%;
+  top: -30px;
+  position: relative;
+}
+
+/*=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+            Responsive
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+*/
+
+
+/*========= 1920px ==========*/
+@media only screen and (max-width: 1920px) {
+
+/*==== home ====*/
+.intro {
+  height: 1040px;
+}
+.intro .intro-bgs .head-img-4 {
+  top: 50%;
+}
+.consulting .con-text .con-anime {
+  width: 50%;
+}
+.consulting .con-bg {
+   left: -20%;
+}
+
+.news h2 {
+  font-size: 120px;
+  color: #ffffff;
+  position: absolute;
+  right: 13%;
+  top: 2%;
+  z-index: 9999;
+}
+.news .news-slider:after {
+  top: 56%;
+}
+.news .news-slider:before {
+  top: 72%;
+}
+
+.news .news-bgs .news-img-3 {
+  right: -14%;
+  top: -47px;
+  position: relative;
+}
+
+.consulting .news-bgs .news-img-4 {
+  position: absolute;
+  right: 2%;
+  top: 150%;
+  z-index: 1;
+}
+
+.news .news-slider .item .slider-overlay {
+  bottom: 110px;
+}
+
+.news .news-slider .item .slider-overlay::before {
+  display: none;
+  content: "";
+  position: absolute;
+  left: 3px;
+  top: -37px;
+  width: 65px;
+  height: 145px;
+  background-color: #fff;
+  transform: rotate(90deg);
+}
+
+
+
+}
+
+
+
+
+/*========= 1445px ==========*/
+@media only screen and (max-width: 1445px) {
+  /*=== header ===*/
+  .main-logo img {
+    max-width: 140px;
+    height: 40px;
+  }
+  header .main-menu li {
+    margin: 0 0;
+  }
+  header .search-form input {
+    min-width: 150px;
+  }
+  header .menu-content {
+    right: -20px;
+    padding: 0 15px;
+    height: 40px;
+
+  }
+  header .main-menu {
+    margin-right: 20px;
+  }
+
+  /*=== Footer ===*/
+  footer .footer-logo {
+    margin-right: 0%;
+    width: 120px;
+  }
+  footer .footer-menu li a {
+    color: #fff;
+    font-size: 16px;
+    font-family: "Century Gothic" !important;
+    padding: 0 !important;
+  }
+  footer .footer-blk {
+    position: relative;
+    margin: 0 15px;
+  }
+  
+
+  /**/
+  .intro {
+    height: 750px;
+  }
+  .news{
+  	height: 750px;
+  }
+  .news .news-bgs .news-img-3 {
+    right: -16%;
+    top: -30px;
+  }
+  .news h2 {
+    font-size: 100px;
+    color: #ffffff;
+    position: absolute;
+    right: 11%;
+    top: 4%;
+    z-index: 9999;
+}
+.consulting .con-text .con-anime {
+  position: absolute;
+  top: 80%;
+  width: 75%;
+  height: 500px;
+  z-index: 999;
+}
+  
+.news .news-slider:after {
+  top: 43%;
+}
+.news .news-slider:before {
+  top: 60%;
+}
+
+.news .news-slider .item .slider-overlay {
+  bottom: 0px;
+}
+
+
+.news .news-slider .item .slider-overlay::before {
+  display: none;
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: -56px;
+  width: 65px;
+  height: 145px;
+  background-color: #fff;
+  transform: rotate(57deg);
+}
+
+}
+
+/*========= 1370px ==========*/
+@media only screen and (max-width: 1370px) {
+  /**/
+  .intro .intro-bgs .head-img-2 {
+    top: 87%;
+  }
+  .intro .intro-bgs .head-img-3 {
+    top: 85%;
+  }
+
+  /**/
+    .news h2 {
+    font-size: 100px;
+    color: #ffffff;
+    position: absolute;
+    right: 10%;
+    top: 13%;
+    z-index: 9999;
+   }
+  .news .news-bgs .news-img-3 {
+    right: -16%;
+    top: 40px;
+    position: relative;
+  }
+
+  /**/
+  .consulting .news-bgs .news-img-4 {
+    position: absolute;
+    right: 0%;
+    top: 165%;
+    z-index: 1;
+}
+
+}
+
+
+
+
+/*========= 1200px ==========*/
+@media only screen and (max-width: 1201px) {
+
+	.intro .intro-bgs .head-img-2 {
+       top: 85%;
+    }
+	.intro .intro-bgs .head-img-3 {
+       top: 82%;
+    }
+
+    .consulting .con-text .con-anime {
+       width: 80%;
+    }
+
+    .news {
+        height: 690px;
+    }
+    .news .news-slider:before {
+        top: 62%;
+    }
+
+    .news .news-slider .item .slider-overlay::before {
+      display: none;
+      content: "";
+      position: absolute;
+      left: -10px;
+      top: -49px;
+      width: 65px;
+      height: 145px;
+      background-color: #fff;
+      transform: rotate(57deg);
+  }
+
+  .consulting .con-text h2 {
+    left: 0%;
+  }
+
+}
+
+
+
+
+/*========= 1024px ==========*/
+@media only screen and (max-width: 1024px) {
+  /**/
+  header .main-menu li a {
+    font-size: 14px;
+    color: #ffffff;
+    font-family: "Century Gothic" !important;
+    padding-right: 5px !important;
+    padding-left: 5px !important;
+  }
+
+  /*=== Footer ===*/
+  footer .footer-menu {
+    display: none;
+  }
+  footer .navbar-collapse {
+    justify-content: flex-end;
+  }
+
+  /*=== Home ===*/
+  .intro .intro-bgs .head-img-3 {
+    top: 73%;
+  }
+  .intro .intro-bgs .head-img-2 {
+    top: 75%;
+  }
+  .intro .intro-bgs .head-img-4 {
+    top: 15%;
+  }
+
+  /**/
+  .about .about-bgs .about-img-2 {
+    right: -55%;
+  }
+  .about .about-bgs .about-img-1 {
+    right: -10%;
+  }
+
+  /**/
+  .consulting {
+    top: -200px;
+    height: 650px;
+  }
+  .consulting .con-text .tlt-line::after {
+    left: 120%;
+  }
+  .consulting .con-bg {
+    position: absolute;
+    top: 60%;
+    left: -50%;
+  }
+  .consulting .con-text h2::after {
+    width: 200px;
+    top: 45px;
+    left: 33%;
+  }
+  .consulting .con-text .con-anime {
+    position: absolute;
+    top: 40%;
+    width: 95%;
+    left: -5%;
+  }
+
+  .consulting .news-bgs .news-img-4 {
+    position: absolute;
+    right: -5%;
+    top: 110%;
+    z-index: 1;
+    width: 35%;
+  }
+
+  .consulting .con-text h2 {
+    top: 0%;
+ }
+  .consulting .news-bgs .news-img-4 {
+  position: absolute;
+  right: 0%;
+  top: 160%;
+  z-index: 1;
+}
+
+
+  /**/
+  .news {
+    height: 550px;
+    padding-top: 15px;
+  }
+  .news h2 {
+    font-size: 100px;
+    color: #ffffff;
+    position: absolute;
+    right: 10%;
+    top: 4%;
+    z-index: 9999;
+}
+  .news .news-slider:before {
+    top: 65%;
+  }
+  .news .news-slider .item .slider-overlay {
+    padding-left: 15%;
+  }
+  .news .news-slider .item .slider-overlay:after {
+    content: "";
+    position: absolute;
+    left: -20px;
+    top: -8px;
+    width: 60px;
+    height: 80px;
+    background-color: #fff;
+    transform: rotate(57deg);
+  }
+
+  .news .news-bgs .news-img-3 {
+    right: -16%;
+    top: -30px;
+    position: relative;
+  }
+
+  .news .news-slider .item .slider-overlay::before {
+    display: none;
+    content: "";
+    position: absolute;
+    left: -19px;
+    top: -43px;
+    width: 65px;
+    height: 145px;
+    background-color: #fff;
+    transform: rotate(57deg);
+}
+
+
+}
+
+/*========= 990px ==========*/
+@media only screen and (max-width: 990px) {
+  /*=== header ===*/
+  header .menu-content {
+    right: 0px;
+    padding-left: 15px;
+    text-align: center;
+  }
+  header .search-form {
+    margin-right: 15px;
+    margin: auto;
+    justify-content: center;
+  }
+
+  /*=== Footer ===*/
+
+  /*=== Home ===*/
+  .consulting .con-text .tlt-line::after {
+    left: 120%;
+    width: 200px!important;
+    top: 25px;
+  }
+
+  .news .news-bgs .news-img-3 {
+    right: -15%;
+    top: -34px;
+    position: relative;
+  }
+}
+
+/*========= 768px ==========*/
+@media only screen and (max-width: 770px) {
+  /*=== header ===*/
+
+  /*=== Footer ===*/
+  footer .navbar-collapse {
+    justify-content: flex-end;
+    display: flex !important;
+    flex: 1;
+  }
+
+  /*=== Home ===*/
+  .intro {
+    position: relative;
+    height: 580px;
+    top: -15px;
+  }
+  .intro .intro-bgs .head-img-2,
+  .intro .intro-bgs .head-img-4,
+  .intro .intro-bgs .head-img-3 {
+    display: none;
+  }
+
+  /**/
+  .about .about-bgs .about-img-2 {
+    right: -75%;
+  }
+
+  /**/
+  .consulting .con-text h2 {
+    font-size: 50px;
+  }
+  .consulting .con-text .con-anime .con-txt-1 {
+    font-size: 50px;
+    line-height: 1;
+    transform: rotate(90deg);
+    top: 15%;
+    left: 51%;
+  }
+  .consulting .con-text .con-anime .con-txt-2 {
+    font-size: 20px;
+    line-height: 1;
+    transform: rotate(90deg);
+    top: 33%;
+    left: 45%;
+  }
+  .consulting .con-text .con-anime .con-txt-3 {
+    font-size: 30px;
+    line-height: 1;
+    transform: rotate(90deg);
+    top: 70%;
+    left: 36%;
+  }
+  .consulting .con-text .con-anime .con-txt-4 {
+    font-size: 20px;
+    line-height: 1;
+    top: 52%;
+    left: 22%;
+  }
+  .consulting .con-text .con-anime .con-txt-5 {
+    font-size: 35px;
+    line-height: 1;
+    top: 58%;
+    left: 17%;
+  }
+  .consulting .con-text .con-anime .con-txt-6 {
+    font-size: 35px;
+    top: 58%;
+    left: 57%;
+  }
+  .consulting .con-text .con-anime .con-txt-7 {
+    font-size: 20px;
+    top: 73%;
+    left: 58%;
+  }
+  .consulting .con-text .con-anime .con-txt-8 {
+    font-size: 30px;
+    top: 82%;
+    left: 32%;
+  }
+  .consulting .news-bgs .news-img-4 {
+    display: none;
+  }
+
+  /**/
+  .news {
+    height: 400px;
+    padding-top: 15px;
+  }
+  .news h2 {
+    font-size: 50px;
+  }
+  .news .news-slider .item .slider-overlay {
+    padding-left: 50%;
+    height: 60px;
+  }
+  .news .news-slider .item .slider-overlay {
+    background-image: none;
+  }
+  .news .news-slider .item .slider-overlay p,
+  .news .news-slider .item .slider-overlay:after {
+    display: none;
+  }
+  .news .news-slider:before {
+    top: 60%;
+    left: 9%;
+  }
+  .news .news-slider:after {
+    top: 28%;
+  }
+
+  .news .news-slider .item .slider-overlay::before {
+    display: none;
+}
+
+
+}
+
+/*========= 580px ==========*/
+@media only screen and (max-width: 580px) {
+  /**/
+  .news {
+    height: 300px;
+    padding-top: 25px;
+  }
+  .news .news-slider:before {
+    top: 68%;
+    left: 9%;
+}
+  .news .news-slider:after {
+    top: 28%;
+}
+.news .news-slider .owl-nav {
+    position: absolute;
+    top: 60%;
+    width: 35%;
+    right: 23%;
+}
+.news .news-slider .owl-nav button img{
+	height: 25px;
+}
+
+
+}
+
+/*========= 480px ==========*/
+@media only screen and (max-width: 480px) {
+  /*=== Footer ===*/
+  footer .footer-logo {
+    margin-right: auto;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  footer .navbar-collapse {
+    display: block !important;
+  }
+  footer .footer-blk {
+    position: relative;
+    margin: 0 10px;
+  }
+
+  /*=== Home ===*/
+  .intro {
+    position: relative;
+    height: 350px;
+    top: -15px;
+  }
+  .intro .intro-slider .item .slider-overlay {
+    position: absolute;
+    top: 40%;
+    right: 0;
+    left: 36%;
+    line-height: 1;
+  }
+  .intro .intro-slider .item .slider-overlay h1 {
+    font-size: 24px;
+    color: #000000;
+  }
+  .intro .intro-slider .item .slider-overlay h1 span {
+    font-size: 30px;
+    color: #000000;
+  }
+  .intro .intro-slider .item .slider-overlay p {
+    font-size: 14px;
+    color: #000000;
+  }
+  .intro .intro-slider .item .slider-overlay a {
+    font-size: 18px;
+    float: right;
+    margin-top: -10px;
+    height: 40px;
+    line-height: 1;
+  }
+
+  /**/
+  .about .about-bgs .about-img-2 {
+    top: -10%;
+  }
+  .about .about-text {
+    padding-left: 62px;
+  }
+  .about .about-text h2 {
+    font-size: 72px;
+  }
+  .about .about-text p {
+    font-size: 16px;
+  }
+
+  /**/
+  .consulting {
+    top: 0;
+  }
+  .consulting .con-text h2 {
+    transform: none;
+    text-align: center;
+    padding-top: 50px;
+  }
+  .consulting .con-text h2::after {
+    display: none;
+  }
+  .consulting .con-text .con-anime {
+    position: absolute;
+    top: 19%;
+    width: 115%;
+    left: -15%;
+  }
+  .consulting .con-text .con-anime .con-txt-1 {
+    font-size: 38px;
+    line-height: 1;
+    transform: rotate(90deg);
+    top: 20%;
+    left: 51%;
+  }
+  .consulting .con-text .con-anime .con-txt-2 {
+    font-size: 18px;
+    line-height: 1;
+    transform: rotate(90deg);
+    top: 30%;
+    left: 41%;
+  }
+  .consulting .con-text .con-anime .con-txt-3 {
+    font-size: 26px;
+    line-height: 1;
+    transform: rotate(90deg);
+    top: 60%;
+    left: 30%;
+  }
+  .consulting .con-text .con-anime .con-txt-4 {
+    font-size: 16px;
+    line-height: 1;
+    top: 50%;
+    left: 16%;
+  }
+  .consulting .con-text .con-anime .con-txt-5 {
+    font-size: 21px;
+    line-height: 1;
+    top: 55%;
+    left: 17%;
+  }
+  .consulting .con-text .con-anime .con-txt-6 {
+    font-size: 26px;
+    top: 52%;
+    left: 61%;
+  }
+  .consulting .con-text .con-anime .con-txt-7 {
+    font-size: 16px;
+    top: 69%;
+    left: 62%;
+  }
+  .consulting .con-text .con-anime .con-txt-8 {
+    font-size: 25px;
+    top: 75%;
+    left: 27%;
+  }
+  .consulting .con-bg {
+    position: absolute;
+    top: 33%;
+    left: -60%;
+  }
+
+  /**/
+  .news {
+    height: 225px;
+    padding-top: 30px;
+  }
+  .news h2 {
+    font-size: 30px;
+    right: 12%;
+    top: 8%;
+  }
+  .news .news-slider .item .slider-overlay {
+    padding-left: 40%;
+    height: 60px;
+  }
+  .news .news-slider:after {
+    content: "";
+    width: 150px;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    top: 27%;
+    left: 20%;
+    transform: rotate(-33deg);
+  }
+  .news .news-slider:before {
+    top: 60%;
+    left: 9%;
+  }
+}
+
+/*========= 380px ==========*/
+@media only screen and (max-width: 380px) {
+  /*footer*/
+
+
+  /**/
+  .about .about-text {
+    position: absolute;
+    top: 5%;
+    right: 0;
+    width: 350px;
+}
+
+  /**/
+  .consulting {
+    height: 450px;
+  }
+  .consulting .con-text h2 {
+    font-size: 50px;
+  }
+  .consulting .con-text .con-anime .con-txt-1 {
+    font-size: 29px;
+    line-height: 1;
+    transform: rotate(90deg);
+    top: 15%;
+    left: 57%;
+  }
+  .consulting .con-text .con-anime .con-txt-2 {
+    font-size: 14px;
+    line-height: 1;
+    transform: rotate(90deg);
+    top: 20%;
+    left: 47%;
+  }
+  .consulting .con-text .con-anime .con-txt-3 {
+    font-size: 23px;
+    line-height: 1;
+    transform: rotate(90deg);
+    top: 47%;
+    left: 33%;
+  }
+  .consulting .con-text .con-anime .con-txt-4 {
+    font-size: 14px;
+    line-height: 1;
+    top: 33%;
+    left: 17%;
+  }
+  .consulting .con-text .con-anime .con-txt-5 {
+    font-size: 20px;
+    line-height: 1;
+    top: 37%;
+    left: 17%;
+  }
+  .consulting .con-text .con-anime .con-txt-6 {
+    font-size: 14px;
+    top: 37%;
+    left: 64%;
+  }
+  .consulting .con-text .con-anime .con-txt-7 {
+    font-size: 14px;
+    top: 44%;
+    left: 65%;
+  }
+  .consulting .con-text .con-anime .con-txt-8 {
+    font-size: 20px;
+    top: 55%;
+    left: 32%;
+  }
+
+  /**/
+  .news {
+    height: 200px;
+    padding-top: 30px;
+}
+  .news .news-slider:before {
+    top: 50%;
+    left: 7%;
+  }
+  .news .news-slider:after {
+    top: 9%;
+    left: 20%;
+  }
+}
+
+
+
+@media only screen and (max-width: 340px) {
+
+  .news {
+    height: 180px;
+    padding-top: 30px;
+  }
+
+}
+
+
+.con-text>h2{
+  display: inline-block;
+}
